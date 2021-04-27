@@ -1,0 +1,104 @@
+body {
+    background-image: url(./img/5orMerS.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before{
+    content: '';
+    height: 100vh;
+    width: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent !important;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.navbar a {
+    color: white !important;
+}
+.navbar-toggler {
+    background-color: white !important;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 8rem;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.cards-container {
+    display: flex;
+    width: 90vh;
+}
+
+.card {
+    border: none;
+}
+
+div.card-container {
+    height: 500px;
+    width: 600px;
+    box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 15px;
+    text-shadow: 1px 2px 2px #333;
+    color: #ddd;
+    margin: 0 0.5rem;
+    position: relative;
+    transition: flex .3s ease-in; 
+}
+
+div.card-container:hover {
+    box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.9);
+    transition: 0.7 ease-in;
+}
+
+div.card-container:nth-child(1) {
+    background: url(./img/external-content.duckduckgo.com.jpg) center/cover no-repeat;
+}
+
+div.card-container:nth-child(2) {
+    background: url(./img/michael-jordan-getty.jpg) center/cover no-repeat;
+}
+
+div.card-container:nth-child(3) {
+    background: url(./img/63ccb2ca47da6e8ee2f7a59de845e74a1435f851_hq.jpg) center/cover no-repeat;
+}
+
+div.card-container:nth-child(4) {
+    background: url(./img/20140615_pjc_so6_136.JPG.0.jpg) center/cover no-repeat;
+}
+
+div.card-container:nth-child(5) {
+    background: url(./img/magic-knicks-basketball-2jpg-225817341b25fd79.jpg) center/cover no-repeat;
+}
+
+.div.card-container.active {
+    flex: 5;
+}
+
+.card-title {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.2s ;
+}

@@ -62,6 +62,7 @@ div.card-container {
     color: #ddd;
     margin: 0 0.5rem;
     position: relative;
+    flex: 0.2;
     transition: flex .3s ease-in; 
 }
 
@@ -90,7 +91,7 @@ div.card-container:nth-child(5) {
     background: url(./img/magic-knicks-basketball-2jpg-225817341b25fd79.jpg) center/cover no-repeat;
 }
 
-.div.card-container.active {
+div.card-container.active {
     flex: 5;
 }
 
@@ -102,3 +103,5 @@ div.card-container:nth-child(5) {
     opacity: 0;
     transition: opacity 0.3s ease-in 0.2s ;
 }
+
+
